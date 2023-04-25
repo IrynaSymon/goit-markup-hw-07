@@ -85,12 +85,14 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+@media and (max-width: 427px) {
+  .footer-form-input {
+    width: 264px;
+  }
+}
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 @media screen and (max-width: 767px) {
   .header-list {
@@ -144,6 +146,7 @@ body {
     background: inherit;
     padding-left: 16px;
     height: 40px;
+    padding: 15px;
   }
   .footer-logo-web {
     display: flex;
@@ -339,8 +342,6 @@ body {
   margin-top: 8px;
 }
 
-@media screen and (max-width: 767px) {
-}
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -351,6 +352,7 @@ body {
 
 /*TABLET*/
 @media screen and (min-width: 768px) {
+
   .container {
     max-width: 768px;
   }
@@ -385,8 +387,6 @@ body {
   .social-link-footer {
     background-color: var(--color-iris);
   }
-}
-@media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;
   }
@@ -397,8 +397,6 @@ body {
     display: flex;
     justify-content: flex-start;
   }
-}
-@media screen and (min-width: 768px) {
   .header-flex {
     align-items: center;
   }
@@ -425,12 +423,11 @@ body {
     display: flex;
     align-items: flex-start;
   }
-}
-@media screen and (min-width: 768px) {
   .section-title {
     background-image: url(../tablet-images/Dark-bg1x.jpg);
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -500,6 +497,9 @@ body {
   .container {
     max-width: 1200px;
   }
+  .section-title {
+    background-image: url(../desctop-images/people-office\ 1x.jpg);
+  }
   .header-address {
     font-style: normal;
     color: var(--color-slate);
@@ -557,11 +557,6 @@ body {
     width: 408px;
     height: 584px;
     padding: 16px 24px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-title {
-    background-image: url(../desctop-images/people-office\ 1x.jpg);
   }
 }
 
